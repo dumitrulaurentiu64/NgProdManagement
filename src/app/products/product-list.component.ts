@@ -5,14 +5,13 @@ import { IProduct } from './product';
 import { ProductService } from './product.service';
 
 @Component({
-    selector: 'pm-products',
     templateUrl: './product-list.component.html',
     styleUrls: ['./product-list.component.css'],
     providers: [ProductService]
 })
 export class ProductListComponent implements OnInit {
 
-    pageTitle: string = 'Product List Second Version';
+    pageTitle: string = 'Product List';
     imageWidth: number = 50;
     imageMargin: number = 2;
     showImage: boolean = false;
